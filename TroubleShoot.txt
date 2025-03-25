@@ -1,0 +1,21 @@
+[시스템 정보]
+OS : Windows 11 Home 64bit
+CPU : AMD Ryzen 7 5800X
+RAM : 32GB
+GPU : NVIDIA GeForce RTX 3060
+Engine Version : 5.5.4
+
+[이슈]
+- 빌드 실패
+
+[예상 원인]
+- 에디터 실행 중
+- 타 프로젝트 실행 중
+- 모듈 입력 누락
+
+[시도한 해결 방법]
+- 에디터와 타 프로젝트 종료
+- 모듈 수정 -> PublicDependencyMuduleNames.AddRange()에 "CoreUObject", "Engine" 추가
+
+[로그 경로]
+Saved/Logs/TenthWork.log
